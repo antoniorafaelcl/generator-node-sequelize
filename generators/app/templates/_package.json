@@ -1,12 +1,12 @@
 {
-  "name": "ntask-api",
+  "name": "<%= name %>",
   "version": "1.0.0",
   "description": "API",
   "main": "index.js",
   "scripts": {
     "start": "babel-node index.js"
   },
-  "author": "Antonio Rafael",
+  "author": "",
   "dependencies": {
     "babel-cli": "^6.26.0",
     "consign": "^0.1.6",

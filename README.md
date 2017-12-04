@@ -1,17 +1,24 @@
-> Gerador Node com Sequelize
+# Gerador de API Node + Sequelize
 
-## Installation
+## Antonio Rafael
+## Jose Aelysson
 
-First, install [Yeoman](http://yeoman.io) and generator-node-sequelize using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
 
-```bash
-npm install -g yo
-npm install -g generator-node-sequelize
-```
+Para Usar, Faça:
 
-Then generate your new project:
+* Clone
+* npm install
+* npm link
+* yo node-sequelize-facisa
 
-```bash
-yo node-sequelize
-```
 
+Para testa a API:
+
+	Utilizando o Programa Postman:
+
+	* http://localhost:3000/tasks => Recupera todas as Tasks
+	* http://localhost:3000/tasks/1(O numero 1 equivale ao id) => Recupera uma item especifico
+	* http://localhost:3000/tasks/1(O numero 1 equivale ao id) => Deleta um item especifico
+
+Para criar uma atividade :
+	* {'title':'Seu titulo'}

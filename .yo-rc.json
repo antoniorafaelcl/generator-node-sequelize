@@ -1,9 +1,3 @@
 {
-  "generator-node": {
-    "promptValues": {
-      "authorName": "Antonio Rafael",
-      "authorEmail": "antoniorafaelcl@gmail.com",
-      "authorUrl": ""
-    }
-  }
+  "generator-generator": {}
 }
