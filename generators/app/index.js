@@ -8,11 +8,16 @@ module.exports = yeoman.generators.Base.extend({
   //Ask for user input
   prompting: function() {
     var done = this.async();
+    
+    this.log(yosay(
+      'Bem-vindo, Aqui é um gerador de node + express + sequelize. Sera criado um projeto e para criar os endpoints por favor digite logo apos esse : yo node-sequelize-facisa:endpoint' +
+      ' e escolha os endpoints que deseja criar.' 
+    ));
+
     this.prompt({
       type: 'input',
       name: 'name',
       message: 'Qual o nome do projeto ?',
-      //Defaults to the project's folder name if the input is skipped
       default: this.appname
     }, function(answers) {
       this.props = answers;
@@ -48,21 +53,6 @@ module.exports = yeoman.generators.Base.extend({
         this.templatePath('_ntask.sqlite'),
         this.destinationPath('ntask.sqlite'),
       );
-
-
-      /////Routes
-      this.fs.copy(
-        this.templatePath('_routes/_index.js'),
-        this.destinationPath('routes/index.js'));
-
-      this.fs.copy(
-        this.templatePath('_routes/_tasks.js'),
-        this.destinationPath('routes/tasks.js'));
-
-      this.fs.copy(
-        this.templatePath('_routes/_users.js'),
-        this.destinationPath('routes/users.js'));
-
 
       // Model
       this.fs.copy(

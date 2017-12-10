@@ -1,26 +1,62 @@
-# Gerador de API Node + Sequelize
+# Gerador de API Node + Express + Sequelize
 
-## Antonio Rafael
-## Jose Aelysson
+>Gerador para criação de API com as Tecnologias Node, Express, Sequelize. Com ela é possivel criar cruds se assim desejar.
+
+## Instalação
+
+Certifique-se que o [Yeoman](http://yeoman.io) e o [node.js](https://nodejs.org/)) estao instalados.
+
+```bash
+npm install -g yo
+npm install -g generator-node-sequelize-facisa
+```
+Em seguida, para gerar um novo projeto, faça :
+
+```bash
+yo generator-node-sequelize-facisa
+```
 
 
-Para Usar, Faça:
+## Criando novos endpoints
+Para criar os endpoints do projeto você deve dentro da pasta do projeto, fazer o seguinte comando:
+
+```bash
+yo generator-node-sequelize-facisa:endpoint
+```
+Isso gerará rotas de REST da sua API.
+
+
+## Metodo de Utilização
+
+Depois de ter criado o projeto e ter criado os endpoints, entre dentro da pasta do projeto e para executar o projeto faça : 
+
+```bash
+npm start
+```
+
+Logo apos executar o Projeto, vamos testa-lo , entre em http://localhost:3000/: 
+
+```
+http://localhost:3000/tasks
+http://localhost:3000/tasks/id
+
+```
+
+Para Criar um registro, utilize o Postman : 
+
+```
+{'title':'Seu titulo'}
+
+```
+Caso deseje clonar a pasta do direto do GIT,  faça o seguinte: 
 
 * Clone
 * npm install
 * npm link
 * yo node-sequelize-facisa
 
+## Contribuidores
 
-Para testa a API:
+[Antonio Rafael](https://github.com/antoniorafaelcl)
 
-	Utilizando o Programa Postman:
-
-	* http://localhost:3000/tasks => Recupera todas as Tasks
-	* http://localhost:3000/tasks/1(O numero 1 equivale ao id) => Recupera uma item especifico
-	* http://localhost:3000/tasks/1(O numero 1 equivale ao id) => Deleta um item especifico
-
-Para criar uma atividade :
-	* {'title':'Seu titulo'}
-
-Teste
+[José Aelysson](https://github.com/Aelysson15)

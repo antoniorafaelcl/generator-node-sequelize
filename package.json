@@ -1,6 +1,6 @@
 {
   "name": "generator-node-sequelize-facisa",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Gerador de API Node + Sequelize",
   "license": "MIT",
   "main": "app/index.js",
