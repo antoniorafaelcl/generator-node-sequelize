@@ -4,7 +4,7 @@
 
 ## Instalação
 
-Certifique-se que o [Yeoman](http://yeoman.io) e o [node.js](https://nodejs.org/)) estao instalados.
+Certifique-se que o [Yeoman](http://yeoman.io) e o [node.js](https://nodejs.org/) estao instalados.
 
 ```bash
 npm install -g yo
