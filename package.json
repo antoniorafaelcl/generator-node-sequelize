@@ -1,13 +1,13 @@
 {
   "name": "generator-node-sequelize-facisa",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Gerador de API Node + Sequelize",
   "license": "MIT",
   "main": "app/index.js",
   "repository": "antoniorafaelcl/generator-node-sequelize",
   "author": {
     "name": "Antonio Rafael e Jose Aelysson",
-    "email": "",
+    "email": "antoniorafaelcl@gmail.com",
     "url": "https://github.com/antoniorafaelcl"
   },
   "scripts": {
