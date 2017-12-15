@@ -1,7 +1,7 @@
 module.exports = app => {
     const Tasks = app.db.models.Tasks;
     
-    <% if (criarGET === true) { %>
+    <% if (criarGETTasks === true) { %>
     app.route("/tasks")
         .get((req,res) => {
             Tasks.findAll({})
@@ -12,7 +12,7 @@ module.exports = app => {
         });
     <% } %>
 
-    <% if (criarPOST === true) { %>
+    <% if (criarPOSTTasks === true) { %>
     app.route("/tasks")
         .post((req, res) => {
             Tasks.create(req.body)
@@ -23,7 +23,7 @@ module.exports = app => {
         });
     <% } %>
 
-    <% if (criarGET === true) { %>
+    <% if (criarGETTasks === true) { %>
     app.route("/tasks/:id")
         .get((req,res) => {
             Tasks.findOne({where: req.params})
@@ -51,7 +51,7 @@ module.exports = app => {
         });
         <% } %>
 
-        <% if (criarDELETE === true) { %>
+        <% if (criarDELETETasks === true) { %>
         app.route("/tasks/:id")
         .delete((req,res) => {
             Tasks.destroy({where: req.params})

@@ -14,26 +14,44 @@ module.exports = yeoman.generators.Base.extend({
     this.prompt([
         {
             type: 'confirm',
-            name: 'criarGET',
-            message: 'Criar metodo GET ?',
+            name: 'criarGETTasks',
+            message: 'Criar metodo GET para o recurso de Tasks ?',
             default: true
         },
         {
             type: 'confirm',
-            name: 'criarPOST',
-            message: 'Criar metodo POST ?',
+            name: 'criarGETUsers',
+            message: 'Criar metodo GET para o recurso de Usuarios ?',
+            default: true
+        },
+        {
+            type: 'confirm',
+            name: 'criarPOSTTasks',
+            message: 'Criar metodo POST para o recurso de Tasks ?',
+            default: true
+        },
+        {
+            type: 'confirm',
+            name: 'criarPOSTUsers',
+            message: 'Criar metodo POST para o recurso de Usuarios ?',
             default: true
         },
         {
             type: 'confirm',
             name: 'criarPUT',
-            message: 'Criar metodo PUT ?',
+            message: 'Criar metodo PUT para o recurso de Tasks ?',
             default: true
         },
         {
             type: 'confirm',
-            name: 'criarDELETE',
-            message: 'Criar metodo DELETE ?',
+            name: 'criarDELETETasks',
+            message: 'Criar metodo DELETE para o recurso de Tasks ?',
+            default: true
+        },
+        {
+            type: 'confirm',
+            name: 'criarDELETEUsers',
+            message: 'Criar metodo DELETE para o recurso de Users ?',
             default: true
         }],
         
@@ -49,10 +67,14 @@ module.exports = yeoman.generators.Base.extend({
     endpoint: function() {
         
         var options = {
-            criarGET: this.props.criarGET,
-            criarPOST: this.props.criarPOST,
+            criarGETTasks: this.props.criarGETTasks,
+            criarGETUsers: this.props.criarGETUsers,
+            criarPOSTTasks: this.props.criarPOSTTasks,
+            criarPOSTUsers: this.props.criarPOSTUsers,
             criarPUT: this.props.criarPUT,
-            criarDELETE: this.props.criarDELETE
+            criarDELETETasks: this.props.criarDELETETasks,
+            criarDELETEUsers: this.props.criarDELETEUsers,
+
         };
 
         this.fs.copyTpl(
